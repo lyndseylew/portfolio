@@ -130,6 +130,7 @@ textarea {
 
    html {
      font-size: 16px;
+     letter-spacing: 0.0625em; /* 16 * 0.0625 = 1px */
    }
 
    body {
@@ -144,10 +145,12 @@ textarea {
    }
 
    h2 {
+     letter-spacing: 0.1em;
    }
 
    h3,
    h4 {
+     letter-spacing: 0.1em;
    }
 
    p {
