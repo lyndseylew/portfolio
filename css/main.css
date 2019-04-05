@@ -424,11 +424,12 @@ textarea {
    }
 
    .about .about-content figure {
-     width: 80%;
+     display: flex;
+     justify-content: center;
    }
 
    .about .about-content img {
-     width: 100%;
+     width: 80%;
      border-radius: 5px;
    }
 
@@ -604,8 +605,9 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
+   @media only screen and (min-width: 768px) {
+
    /* -------------------- Tablet Header - Footer Styles -------------------- */
-   @media screen and (min-width: 768px) {
 
      header .content-wrapper {
        flex-flow: row nowrap;
@@ -627,6 +629,30 @@ textarea {
        }
 
        footer .copyright {
+         flex-flow: row nowrap;
+       }
+
+
+       .skills .skills-content {
+         flex-flow: row nowrap;
+       }
+
+       .skills .skills-items {
+         flex-basis: 25%;
+       }
+
+       .about .about-content {
+         flex-flow: row nowrap;
+         align-items: flex-start;
+       }
+
+       .about .about-content figure {
+         margin-left: 0;
+         margin-right: 0;
+         flex-basis: 100%
+       }
+
+       .portfolio article {
          flex-flow: row nowrap;
        }
 
