@@ -286,6 +286,9 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: column nowrap;
+     height: 100vh;
+     background-image: url("../img/backgrounds/monstera-deliciosa.jpg");
+     background-size: cover;
    }
 
    .hero .content-wrapper {
@@ -294,6 +297,7 @@ textarea {
      align-items: center;
      flex-flow: column nowrap;
      padding: 20px 0;
+     color: white;
    }
 
    /* SKILLS  STYLES */
@@ -329,6 +333,10 @@ textarea {
      flex-basis: 50%;
    }
 
+   .skills .skills-items img {
+     width: 100%;
+   }
+
    /* TOOLS  STYLES */
 
    .tools {
@@ -351,6 +359,43 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     width: 100%;
+   }
+
+   .tools .tools-graph {
+     display: flex;
+     flex-flow: column nowrap;
+     list-style: none;
+     padding: 0;
+     width:100%;
+   }
+
+   .tools .tools-graph li {
+     height: 35px;
+     line-height: 35px;
+     padding: 0px 20px;
+     margin-bottom: 5px;
+     background-color: #81A3A7;
+     border-radius: 5px;
+     font-weight: bold;
+     font-size: 1.125em;
+     color: #fff;
+   }
+
+   .tools .tools-graph .html {
+     width: 82%
+   }
+   .tools .tools-graph .css {
+     width: 80%
+   }
+   .tools .tools-graph .javascript {
+     width: 60%
+   }
+   .tools .tools-graph .jquery {
+     width:50%
+   }
+   .tools .tools-graph .flexbox {
+     width: 55%
    }
 
    /* ABOUT  STYLES */
@@ -376,6 +421,15 @@ textarea {
      align-items: center;
      flex-flow: row wrap;
      width: 100%;
+   }
+
+   .about .about-content figure {
+     width: 80%;
+   }
+
+   .about .about-content img {
+     width: 100%;
+     border-radius: 5px;
    }
 
    /* PORTFOLIO  STYLES */
