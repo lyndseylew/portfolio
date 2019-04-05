@@ -266,6 +266,11 @@ textarea {
    }
 
    footer .copyright {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-flow: column wrap;
    }
 
    /* -------------------- Base Mobile Styles - Homepage -------------------- */
@@ -274,16 +279,16 @@ textarea {
      width: 83%;
    }
 
-   /* INTRODUCTION STYLES */
+   /* HERO STYLES */
 
-   .introduction {
+   .hero {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: column nowrap;
    }
 
-   .introduction .content-wrapper {
+   .hero .content-wrapper {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -295,17 +300,82 @@ textarea {
 
    .skills {
      display: flex;
-     justify-content: center;
+     justify-content: flex-start;
      align-items: center;
      flex-flow: column nowrap;
    }
 
    .skills .content-wrapper {
      display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-flow: column nowrap;
+     padding: 20px 0;
+   }
+
+   .skills .skills-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
+   .skills .skills-items {
+     display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: column nowrap;
      padding: 20px 0;
+     flex-basis: 50%;
+   }
+
+   /* TOOLS  STYLES */
+
+   .tools {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-flow: column nowrap;
+   }
+
+   .tools .content-wrapper {
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-flow: column nowrap;
+     padding: 20px 0;
+   }
+
+   .tools .tools-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
+   /* ABOUT  STYLES */
+
+   .about {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-flow: column nowrap;
+   }
+
+   .about .content-wrapper {
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     flex-flow: column nowrap;
+     padding: 20px 0;
+   }
+
+   .about .about-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     width: 100%;
    }
 
    /* PORTFOLIO  STYLES */
@@ -501,6 +571,11 @@ textarea {
       header .navbar-toggle {
           display: none;
        }
+
+       footer .copyright {
+         flex-flow: row nowrap;
+       }
+
   }
 
 
