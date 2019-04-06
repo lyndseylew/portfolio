@@ -344,8 +344,12 @@ textarea {
      flex-basis: 50%;
    }
 
+   .skills .skills-items figure {
+     text-align: center;
+   }
+
    .skills .skills-items img {
-     width: 100%;
+     width: 80%;
    }
 
    /* TOOLS  STYLES */
@@ -365,45 +369,47 @@ textarea {
    .tools .tools-content {
      display: flex;
      justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+     align-items: flex-start;
+     flex-flow: column wrap;
      width: 100%;
    }
 
-   .tools .tools-graph {
-     display: flex;
-     flex-flow: column nowrap;
-     list-style: none;
-     padding: 0;
-     width:100%;
-   }
-
-   .tools .tools-graph li {
-     height: 35px;
-     line-height: 35px;
-     padding: 0px 20px;
-     margin-bottom: 5px;
+   .tools .tools-content .tool {
      background-color: #81A3A7;
      border-radius: 5px;
+     padding: 0 10px;
      font-weight: bold;
      font-size: 1.125em;
      color: #fff;
+     letter-spacing: 1px;
    }
 
-   .tools .tools-graph .html {
-     width: 82%
+   .tools .outer-tool {
+     width: 100%;
+     border: 2px solid #81A3A7;
+     border-radius: 5px;
+     margin: 5px 0;
+     padding: 3px;
    }
-   .tools .tools-graph .css {
-     width: 80%
+
+   .tools .html {
+     width: 92%;
    }
-   .tools .tools-graph .javascript {
-     width: 60%
+   .tools .css {
+     width: 90%;
    }
-   .tools .tools-graph .jquery {
-     width:50%
+   .tools .javascript {
+     width: 70%;
    }
-   .tools .tools-graph .flexbox {
-     width: 55%
+   .tools .jquery {
+     width:40%;
+   }
+   .tools .flexbox {
+     width: 60%;
+   }
+
+   .tools .bootstrap {
+     width: 85%;
    }
 
    /* ABOUT  STYLES */
@@ -506,6 +512,11 @@ textarea {
 
    .contact figure img {
      height: 50px;
+   }
+
+   .contact .contact-description {
+     text-align: center;
+     width: 50%;
    }
 
    /* -------------------- Base Mobile Styles - Portfolio -------------------- */
