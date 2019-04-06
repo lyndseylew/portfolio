@@ -218,7 +218,7 @@ textarea {
    }
 
    header figure {
-     margin:  20px 0;
+     margin:  10px 0;
    }
 
    header nav {
@@ -273,6 +273,7 @@ textarea {
 
    footer .social-icons img {
      height: 30px;
+     margin: 0 20px;
    }
 
    footer p {
@@ -301,7 +302,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: column nowrap;
-     height: 100vh;
+     height: calc(100vh - 70px);
      background-image: url("../img/backgrounds/monstera-deliciosa.jpg");
      background-size: cover;
    }
@@ -318,14 +319,11 @@ textarea {
 
    .skills {
      display: flex;
-     justify-content: flex-start;
      align-items: center;
      flex-flow: column nowrap;
    }
 
    .skills .content-wrapper {
-     justify-content: flex-start;
-     align-items: flex-start;
      flex-flow: column nowrap;
      padding: 20px 0;
    }
@@ -360,8 +358,6 @@ textarea {
    }
 
    .tools .content-wrapper {
-     justify-content: flex-start;
-     align-items: flex-start;
      flex-flow: column nowrap;
      padding: 20px 0;
    }
@@ -420,13 +416,11 @@ textarea {
    }
 
    .about .content-wrapper {
-     justify-content: flex-start;
-     align-items: flex-start;
      flex-flow: column nowrap;
      padding: 20px 0;
    }
 
-   .about .about-content {
+   .about .about-intro, .about .about-content {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -434,13 +428,12 @@ textarea {
      width: 100%;
    }
 
-   .about .about-content figure {
+   .about .about-intro figure {
      display: flex;
      justify-content: center;
    }
 
    .about .about-content img {
-     width: 80%;
      border-radius: 5px;
    }
 
@@ -454,9 +447,6 @@ textarea {
    }
 
    .portfolio .content-wrapper {
-     display: flex;
-     justify-content: center;
-     align-items: center;
      flex-flow: column nowrap;
      padding: 20px 0;
    }
@@ -492,22 +482,6 @@ textarea {
      margin-left: auto;
    }
 
-   /* TESTIMONIALS  STYLES */
-
-   .testimonials {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: column nowrap;
-   }
-
-   .testimonials .content-wrapper {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: column nowrap;
-   }
-
    /* SKILLS  STYLES */
 
    .contact {
@@ -516,6 +490,10 @@ textarea {
      align-items: center;
      flex-flow: column nowrap;
      background-color: #F1F3F2;
+     background-image: url("../img/backgrounds/plant-corner.png");
+     background-size: contain ;
+     background-repeat: no-repeat;
+     background-position: bottom left;
    }
 
    .contact .content-wrapper {
@@ -672,8 +650,16 @@ textarea {
 
        footer .copyright {
          flex-flow: row nowrap;
+         justify-content: center;
        }
 
+       footer .copyright p {
+         margin: 0 5px;
+       }
+
+       footer .social-icons {
+         justify-content: center;
+       }
 
        .skills .skills-content {
          flex-flow: row nowrap;
@@ -683,15 +669,28 @@ textarea {
          flex-basis: 25%;
        }
 
-       .about .about-content {
+       .about .about-intro {
          flex-flow: row nowrap;
-         align-items: flex-start;
+         align-items: center;
        }
 
-       .about .about-content figure {
-         margin-left: 0;
-         margin-right: 0;
-         flex-basis: 100%
+       .about .about-content {
+         flex-flow: row nowrap;
+         justify-content: space-evenly;
+       }
+
+       .about .about-content p {
+         width: 33%;
+         margin: 10px;
+       }
+
+       .about .about-intro figure {
+         margin: 0 25px;
+         width: 33%;
+       }
+
+       .about .about-content .about-text {
+         flex-grow: 2;
        }
 
        .portfolio article {
