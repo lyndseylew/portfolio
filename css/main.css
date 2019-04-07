@@ -121,7 +121,7 @@ textarea {
        font-family: Moon;
        src: url("../fonts/moon-light.eot"), /* IE9 Compat Modes
             url("../fonts/moon-light.woff") format("woff"), /* Modern Browsers
-            url("../fonts/moon-light.ttf")  format("truetype"); /* Safari, Android, iOS 
+            url("../fonts/moon-light.ttf")  format("truetype"); /* Safari, Android, iOS
         font-style: normal;
         font-weight: 200;
       }
@@ -629,6 +629,18 @@ textarea {
    .contact-page img {
      width: 100%;
      border-radius: 5px;
+   }
+
+   input:-webkit-autofill,
+   input:-webkit-autofill:hover,
+   input:-webkit-autofill:focus
+   textarea:-webkit-autofill,
+   textarea:-webkit-autofill:hover
+   textarea:-webkit-autofill:focus,
+   select:-webkit-autofill,
+   select:-webkit-autofill:hover,
+   select:-webkit-autofill:focus {
+     width: 100%;
    }
 
  /* ==========================================================================
