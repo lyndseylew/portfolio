@@ -180,7 +180,12 @@ textarea {
    }
 
    button {
-     margin: 10px 0;
+     margin: 20px 0 10px 0;
+     padding: 1px 24px;
+     border-radius: 4px;
+     color: #fff;
+     background-color: #81A3A7;
+     border-color: #81A3A7;
    }
 
    .button {
@@ -317,6 +322,10 @@ textarea {
 
    .section-heading {
      padding: 10px 0;
+   }
+
+   .light {
+     background-color: #F1F3F2;
    }
 
    /* HERO STYLES */
@@ -527,7 +536,6 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: column nowrap;
-     background-color: #F1F3F2;
      background-image: url("../img/backgrounds/mobile-contact-background.png");
      background-size: 40%;
      background-repeat: no-repeat;
@@ -535,7 +543,6 @@ textarea {
    }
 
    .contact .content-wrapper {
-     display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: column nowrap;
@@ -571,7 +578,6 @@ textarea {
    }
 
    .page-title .content-wrapper {
-     display: flex;
      justify-content: flex-start;
      align-items: center;
    }
@@ -599,6 +605,66 @@ textarea {
      margin-right: 10px;
    }
 
+   /* -------------------- Base Mobile Styles - Contact -------------------- */
+
+   .contact-page {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column nowrap;
+   }
+
+   .contact-page .content-wrapper {
+     justify-content: flex-start;
+     align-items: center;
+     flex-flow: column nowrap;
+   }
+
+   .contact-page .content-wrapper p {
+     text-align: center;
+   }
+
+   .contact-page .contact-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column nowrap;
+     width: 100%;
+   }
+
+   .contact-page .contact-form {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column nowrap;
+     width: 100%;
+   }
+
+   .contact-page form {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column nowrap;
+     width: 100%;
+   }
+
+   .contact-page form input {
+     width: 95%;
+     margin: 8px 0;
+     padding: 5px;
+     border-radius: 5px;
+   }
+
+   .contact-page form textarea {
+     width: 95%;
+     margin: 8px 0;
+     padding: 5px;
+     border-radius: 5px;
+   }
+
+   .contact-page img {
+     width: 100%;
+   }
 
  /* ==========================================================================
    Helper classes
