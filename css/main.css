@@ -126,6 +126,12 @@ textarea {
         font-weight: lighter;
       }
 
+      @font-face {
+        font-family: "Scope One";
+        src: url("../fonts/scopeone.ttf")  format("truetype"); /* Safari, Android, iOS */
+         font-style: normal;
+         font-weight: lighter;
+       }
 
 
    html {
@@ -148,12 +154,19 @@ textarea {
    }
 
    h2 {
-     letter-spacing: 0.1em;
+     font-family: "Scope One", serif;
+     margin: 0;
    }
 
-   h3,
+   h3 {
+     letter-spacing: 0.1em;
+     font-size: 1.05em;
+   }
+
    h4 {
      letter-spacing: 0.1em;
+     font-size: 1em;
+     font-style: italic;
    }
 
    p {
@@ -163,6 +176,7 @@ textarea {
    }
 
    figure {
+     margin: 5px;
    }
 
    button {
@@ -234,6 +248,7 @@ textarea {
 
    header .active {
      display: flex;
+     cursor: pointer;
    }
 
    header nav ul {
@@ -249,6 +264,11 @@ textarea {
      list-style-type: none;
    }
 
+   #js-navbar-toggle {
+     cursor: pointer;
+   }
+
+
    /* FOOTER STYLES */
 
    footer .content-wrapper {
@@ -256,7 +276,6 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: column-reverse nowrap;
-     padding: 20px 0;
    }
 
    footer .social-icons {
@@ -293,6 +312,11 @@ textarea {
    .content-wrapper {
      display: flex;
      width: 83%;
+     margin: 20px 0;
+   }
+
+   .section-heading {
+     padding: 10px 0;
    }
 
    /* HERO STYLES */
@@ -303,7 +327,7 @@ textarea {
      align-items: center;
      flex-flow: column nowrap;
      height: calc(100vh - 70px);
-     background-image: url("../img/backgrounds/monstera-deliciosa.jpg");
+     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/backgrounds/monstera-deliciosa.jpg");
      background-size: cover;
    }
 
@@ -311,8 +335,11 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: column nowrap;
-     padding: 20px 0;
      color: white;
+   }
+
+   .hero p {
+     font-size: 1.7em;
    }
 
    /* SKILLS  STYLES */
@@ -325,7 +352,6 @@ textarea {
 
    .skills .content-wrapper {
      flex-flow: column nowrap;
-     padding: 20px 0;
    }
 
    .skills .skills-content {
@@ -333,6 +359,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+     margin-top: 10px;
    }
 
    .skills .skills-items {
@@ -346,6 +373,7 @@ textarea {
 
    .skills .skills-items figure {
      text-align: center;
+     margin: 0 30px;
    }
 
    .skills .skills-items img {
@@ -363,7 +391,6 @@ textarea {
 
    .tools .content-wrapper {
      flex-flow: column nowrap;
-     padding: 20px 0;
    }
 
    .tools .tools-content {
@@ -372,13 +399,14 @@ textarea {
      align-items: flex-start;
      flex-flow: column wrap;
      width: 100%;
+     margin-top: 20px;
    }
 
    .tools .tools-content .tool {
      background-color: #81A3A7;
      border-radius: 5px;
      padding: 0 10px;
-     font-weight: bold;
+     font-weight: normal;
      font-size: 1.125em;
      color: #fff;
      letter-spacing: 1px;
@@ -386,10 +414,10 @@ textarea {
 
    .tools .outer-tool {
      width: 100%;
-     border: 2px solid #81A3A7;
+     border: 1px solid #81A3A7;
      border-radius: 5px;
-     margin: 5px 0;
-     padding: 3px;
+     margin: 8px 0;
+     padding: 2px;
    }
 
    .tools .html {
@@ -423,23 +451,24 @@ textarea {
 
    .about .content-wrapper {
      flex-flow: column nowrap;
-     padding: 20px 0;
    }
 
-   .about .about-intro, .about .about-content {
+   .about .about-intro {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
      width: 100%;
+     margin-top: 20px;
    }
 
    .about .about-intro figure {
      display: flex;
      justify-content: center;
+     width: 80%;
    }
 
-   .about .about-content img {
+   .about img {
      border-radius: 5px;
    }
 
@@ -454,7 +483,10 @@ textarea {
 
    .portfolio .content-wrapper {
      flex-flow: column nowrap;
-     padding: 20px 0;
+   }
+
+   .portfolio .featured{
+     margin: 20px 0;
    }
 
    .portfolio article {
@@ -462,7 +494,7 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: column-reverse nowrap;
-     margin: 20px 0;
+     margin: 30px 0;
    }
 
    .portfolio .project-content {
@@ -496,8 +528,8 @@ textarea {
      align-items: center;
      flex-flow: column nowrap;
      background-color: #F1F3F2;
-     background-image: url("../img/backgrounds/plant-corner.png");
-     background-size: contain ;
+     background-image: url("../img/backgrounds/mobile-contact-background.png");
+     background-size: 40%;
      background-repeat: no-repeat;
      background-position: bottom left;
    }
@@ -507,16 +539,24 @@ textarea {
      justify-content: center;
      align-items: center;
      flex-flow: column nowrap;
-     padding: 30px 0;
    }
 
    .contact figure img {
      height: 50px;
+     margin: 0;
+   }
+
+   .contact p {
+     margin-top: 0
+   }
+
+   .contact .button {
+     margin: 10px;
    }
 
    .contact .contact-description {
      text-align: center;
-     width: 50%;
+     width: 60%;
    }
 
    /* -------------------- Base Mobile Styles - Portfolio -------------------- */
@@ -536,6 +576,14 @@ textarea {
      align-items: center;
    }
 
+   .page-title h1 {
+     margin: 0;
+   }
+
+   .portfolio article {
+     align-items: flex-start;
+   }
+
    .portfolio .project-links {
      display: flex;
      justify-content: space-between;
@@ -547,6 +595,9 @@ textarea {
      height: 30px;
    }
 
+   .portfolio .button {
+     margin-right: 10px;
+   }
 
 
  /* ==========================================================================
@@ -711,6 +762,15 @@ textarea {
        .portfolio figure {
          min-width: 45%;
          margin: 0 20px;
+       }
+
+       .portfolio .project-links {
+         justify-content: flex-start;
+       }
+
+       .contact {
+         background-image: url(../img/backgrounds/contact-background.png);
+         background-size: auto 120%;
        }
 
        /* -------------------- Tablet Styles - Portfolio -------------------- */
