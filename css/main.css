@@ -782,6 +782,40 @@ textarea {
 
   }
 
+  @media only screen and (min-width: 1200px) {
+
+    .content-wrapper {
+      max-width: 960px;
+    }
+
+    p {
+      font-size: 1.125em;
+    }
+
+    /* -------------------- Desktop Header - Footer Styles -------------------- */
+    footer .content-wrapper {
+      flex-flow: row nowrap;
+    }
+
+    footer .copyright {
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+
+    footer .social-icons {
+      justify-content: flex-end;
+    }
+
+    .about .about-intro figure {
+      width: 20%;
+    }
+
+    .portfolio figure {
+      min-width: 40%;
+    }
+
+}
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
