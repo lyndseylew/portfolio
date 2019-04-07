@@ -351,19 +351,19 @@ textarea {
      font-size: 1.7em;
    }
 
-   /* SKILLS  STYLES */
+   /* ABOUT  STYLES */
 
-   .skills {
+   .about {
      display: flex;
      align-items: center;
      flex-flow: column nowrap;
    }
 
-   .skills .content-wrapper {
+   .about .content-wrapper {
      flex-flow: column nowrap;
    }
 
-   .skills .skills-content {
+   .about .skills-content {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -371,7 +371,7 @@ textarea {
      margin-top: 10px;
    }
 
-   .skills .skills-items {
+   .about .skills-items {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -380,38 +380,23 @@ textarea {
      flex-basis: 50%;
    }
 
-   .skills .skills-items figure {
+   .about .skills-items figure {
      text-align: center;
      margin: 0 30px;
    }
 
-   .skills .skills-items img {
+   .about .skills-items img {
      width: 80%;
    }
 
-   /* TOOLS  STYLES */
-
-   .tools {
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     flex-flow: column nowrap;
-   }
-
-   .tools .content-wrapper {
-     flex-flow: column nowrap;
-   }
-
-   .tools .tools-content {
+   .about .tools-content {
      display: flex;
      justify-content: center;
      align-items: flex-start;
      flex-flow: column wrap;
-     width: 100%;
-     margin-top: 20px;
    }
 
-   .tools .tools-content .tool {
+   .about .tools-content .tool {
      background-color: #81A3A7;
      border-radius: 5px;
      padding: 0 10px;
@@ -421,7 +406,7 @@ textarea {
      letter-spacing: 1px;
    }
 
-   .tools .outer-tool {
+   .about .outer-tool {
      width: 100%;
      border: 1px solid #81A3A7;
      border-radius: 5px;
@@ -429,37 +414,24 @@ textarea {
      padding: 2px;
    }
 
-   .tools .html {
+   .about .html {
      width: 92%;
    }
-   .tools .css {
+   .about .css {
      width: 90%;
    }
-   .tools .javascript {
+   .about .javascript {
      width: 70%;
    }
-   .tools .jquery {
+   .about .jquery {
      width:40%;
    }
-   .tools .flexbox {
+   .about .flexbox {
      width: 60%;
    }
 
-   .tools .bootstrap {
+   .about .bootstrap {
      width: 85%;
-   }
-
-   /* ABOUT  STYLES */
-
-   .about {
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     flex-flow: column nowrap;
-   }
-
-   .about .content-wrapper {
-     flex-flow: column nowrap;
    }
 
    .about .about-intro {
@@ -790,11 +762,12 @@ textarea {
          justify-content: center;
        }
 
-       .skills .skills-content {
+       .about .skills-content {
          flex-flow: row nowrap;
+         margin: 0 5%;
        }
 
-       .skills .skills-items {
+       .about .skills-items {
          flex-basis: 25%;
        }
 
@@ -837,7 +810,15 @@ textarea {
 
        .contact {
          background-image: url(../img/backgrounds/contact-background.png);
-         background-size: auto 120%;
+         background-size: auto 100%;
+       }
+
+       .contact {
+         padding: 30px 0;
+       }
+
+       .contact .contact-description {
+         margin: 20px 0 20px 0;
        }
 
        /* -------------------- Tablet Styles - Portfolio -------------------- */
@@ -851,6 +832,10 @@ textarea {
      @media only screen and (min-width: 960px) {
 
        /* -------------------- Tablet Styles - contact -------------------- */
+
+       .about .about-intro figure {
+         width:25%;
+       }
 
        .contact-page .contact-content {
          flex-flow: row nowrap;
@@ -880,6 +865,9 @@ textarea {
          max-width: 960px;
        }
 
+      .about .about-intro figure {
+        width:25%;
+      }
 
      }
 
