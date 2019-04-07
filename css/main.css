@@ -105,7 +105,7 @@ textarea {
           url("../fonts/moon.woff") format("woff"), /* Modern Browsers */
           url("../fonts/moon.ttf")  format("truetype"); /* Safari, Android, iOS */
       font-style: normal;
-      font-weight: normal;
+      font-weight: 500;
     }
 
     @font-face {
@@ -114,7 +114,7 @@ textarea {
            url("../fonts/moon-bold.woff") format("woff"), /* Modern Browsers */
            url("../fonts/moon-bold.ttf")  format("truetype"); /* Safari, Android, iOS */
        font-style: normal;
-       font-weight: bold;
+       font-weight: 700;
      }
 
      @font-face {
@@ -123,16 +123,8 @@ textarea {
             url("../fonts/moon-light.woff") format("woff"), /* Modern Browsers */
             url("../fonts/moon-light.ttf")  format("truetype"); /* Safari, Android, iOS */
         font-style: normal;
-        font-weight: lighter;
+        font-weight: 200;
       }
-
-      @font-face {
-        font-family: "Scope One";
-        src: url("../fonts/scopeone.ttf")  format("truetype"); /* Safari, Android, iOS */
-         font-style: normal;
-         font-weight: lighter;
-       }
-
 
    html {
      font-size: 16px;
@@ -140,7 +132,7 @@ textarea {
    }
 
    body {
-     font-family: Moon;
+     font-family: Moon, Montserrat, sans-serif;
      color: #272424;
    }
 
