@@ -116,16 +116,16 @@ textarea {
        font-style: normal;
        font-weight: 700;
      }
-
+/*
      @font-face {
        font-family: Moon;
-       src: url("../fonts/moon-light.eot"), /* IE9 Compat Modes */
-            url("../fonts/moon-light.woff") format("woff"), /* Modern Browsers */
-            url("../fonts/moon-light.ttf")  format("truetype"); /* Safari, Android, iOS */
+       src: url("../fonts/moon-light.eot"), /* IE9 Compat Modes
+            url("../fonts/moon-light.woff") format("woff"), /* Modern Browsers
+            url("../fonts/moon-light.ttf")  format("truetype"); /* Safari, Android, iOS 
         font-style: normal;
         font-weight: 200;
       }
-
+*/
    html {
      font-size: 16px;
      letter-spacing: 0.0625em; /* 16 * 0.0625 = 1px */
