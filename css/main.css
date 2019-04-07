@@ -664,6 +664,7 @@ textarea {
 
    .contact-page img {
      width: 100%;
+     border-radius: 5px;
    }
 
  /* ==========================================================================
@@ -845,42 +846,43 @@ textarea {
          flex-flow: row-reverse nowrap;
        }
 
+     }
 
-  }
+     @media only screen and (min-width: 960px) {
 
-  @media only screen and (min-width: 1200px) {
+       /* -------------------- Tablet Styles - contact -------------------- */
 
-    .content-wrapper {
-      max-width: 960px;
-    }
+       .contact-page .contact-content {
+         flex-flow: row nowrap;
+       }
 
-    p {
-      font-size: 1.125em;
-    }
+       .contact-page .contact-form {
+         min-width: 50%;
+       }
 
-    /* -------------------- Desktop Header - Footer Styles -------------------- */
-    footer .content-wrapper {
-      flex-flow: row nowrap;
-    }
+       .contact-page form {
+         align-items: flex-start;
+       }
 
-    footer .copyright {
-      flex-flow: row nowrap;
-      justify-content: flex-start;
-    }
+       .contact-page form input {
+         margin: 5px 0;
+       }
 
-    footer .social-icons {
-      justify-content: flex-end;
-    }
+       .contact-page figure {
+         margin-right: 10px;
+       }
 
-    .about .about-intro figure {
-      width: 20%;
-    }
+     }
 
-    .portfolio figure {
-      min-width: 40%;
-    }
+     @media only screen and (min-width: 1200px) {
 
-}
+       .content-wrapper {
+         max-width: 960px;
+       }
+
+
+     }
+
 
 
 @media print,
