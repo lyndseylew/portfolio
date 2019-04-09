@@ -13,11 +13,7 @@ $(function(){
     backSpeed: 40,
     backDelay: 1000,
     loop: true,
-    callback: function(){
-      shift();
-    }
   });
-
 });
 
 function shift(){
