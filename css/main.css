@@ -785,6 +785,10 @@ textarea {
          width: 33%;
        }
 
+       .about .about-intro img {
+         width: 80%;
+       }
+
        .about .about-content .about-text {
          flex-grow: 2;
        }
@@ -828,7 +832,7 @@ textarea {
        /* -------------------- Tablet Styles - contact -------------------- */
 
        .about .about-intro figure {
-         width: 25%;
+         width: 80%;
        }
 
        .contact-page .contact-content {
@@ -858,11 +862,6 @@ textarea {
        .content-wrapper {
          max-width: 960px;
        }
-
-      .about .about-intro figure {
-        width:25%;
-      }
-
      }
 
 
