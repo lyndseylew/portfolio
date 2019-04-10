@@ -782,11 +782,11 @@ textarea {
 
        .about .about-intro figure {
          margin: 0 25px;
-         width: 33%;
+         width: 100%;
        }
 
        .about .about-intro img {
-         width: 80%;
+         width: 100%;
        }
 
        .about .about-content .about-text {
