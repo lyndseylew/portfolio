@@ -457,6 +457,7 @@ textarea {
 
    .portfolio .content-wrapper {
      flex-flow: column nowrap;
+     height: 100%;
    }
 
    .portfolio .featured{
