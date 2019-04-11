@@ -835,6 +835,19 @@ textarea {
 
        /* -------------------- Tablet Styles - contact -------------------- */
 
+       footer .content-wrapper{
+         flex-flow: row nowrap;
+         justify-content: space-between;
+       }
+
+       footer .copyright {
+         flex-flow: flex-start;
+       }
+
+       footer .social-icons {
+         justify-content: flex-end;
+       }
+
        .about .about-intro figure {
          width: 80%;
        }
