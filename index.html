@@ -70,58 +70,58 @@
       </div>
       <div class="skills-content">
         <div class="skills-items">
-          <figure data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000" >
+          <figure data-aos="zoom-in">
             <img src="img/icons/devices.png" alt="Laptop & Mobile Device" />
           </figure>
           <h3>Responsive</h3>
         </div> <!-- skills items ends -->
         <div class="skills-items">
-          <figure data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+          <figure data-aos="zoom-in">
             <img src="img/icons/dance.png" alt="Dancers" />
           </figure>
           <h3>Dynamic</h3>
         </div> <!-- skills items ends -->
         <div class="skills-items">
-          <figure data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000" >
+          <figure data-aos="zoom-in" >
             <img src="img/icons/touch-screen.png" alt="Mobile Device" />
           </figure>
           <h3>Mobile-First</h3>
         </div> <!-- skills items ends -->
         <div class="skills-items">
-          <figure data-aos="flip-right" data-aos-delay="700" data-aos-duration="1000" >
+          <figure data-aos="zoom-in">
             <img src="img/icons/diamond.png" alt="Sparkling Gem" />
           </figure>
           <h3>Clean</h3>
         </div> <!-- skills items ends -->
       </div><!-- skills content ends -->
-      <div class="tools-content">
-        <div class="outer-tool">
-          <div class="tool html">HTML</div>
+      <div id="tools" class="tools-content">
+        <div class="tool-border" data-percentage="92%">
+          <div class="tool-bar">HTML</div>
         </div>
-        <div class="outer-tool">
-          <div class="tool css">CSS</div>
+        <div class="tool-border" data-percentage="90%">
+          <div class="tool-bar">CSS</div>
         </div>
-        <div class="outer-tool">
-          <div class="tool javascript">JavaScript</div>
+        <div class="tool-border" data-percentage="70%">
+          <div class="tool-bar">JavaScript</div>
         </div>
-        <div class="outer-tool">
-          <div class="tool jquery">jQuery</div>
+        <div class="tool-border" data-percentage="40%">
+          <div class="tool-bar">jQuery</div>
         </div>
-        <div class="outer-tool">
-          <div class="tool flexbox">FlexBox</div>
+        <div class="tool-border" data-percentage="60%">
+           <div class="tool-bar">FlexBox</div>
         </div>
-        <div class="outer-tool">
-          <div class="tool bootstrap">Boostrap</div>
+        <div class="tool-border" data-percentage="85%">
+          <div class="tool-bar">Boostrap</div>
         </div>
       </div><!-- tools content ends -->
       <div class="about-intro">
-        <figure>
+        <figure data-aos="fade-right">
           <img src="img/lyndsey.jpg" alt="Lyndsey" />
         </figure>
-        <div>
+        <div data-aos="fade-left">
           <p>I am a mobile first responsive developer who’s a creative problem solver and thrives on clean design. Let me build you a beautiful and useful website to bring your impactful idea to life!</p>
           <p>When I'm not working or coding, you can find me traveling, getting lost in nature, and doing yoga.</p>
-        </div>
+          <div>
       </div><!--about-intro ends -->
     </div> <!--about content wrapper ends -->
   </section> <!--about section ends -->
@@ -132,13 +132,13 @@
         <h2>Featured Project</h2>
       </div>
       <article class="featured">
-        <div class="project-content">
+        <div class="project-content" data-aos="fade-right">
           <h3>Interactive US Election Map</h3>
           <h4>JavaScript</h4>
           <p>For this project, I created an interactive map of the United States which displays the results of an imitation election. Viewers can see the state level results as they hover over the map. This site references the HTML5 and JavaScript US map from <a href="http://dougx.net/map/usmap.html">DougX</a>.</p>
           <a href="portfolio/index.html" class ="button">check out my portfolio</a>
         </div>
-        <figure>
+        <figure data-aos="fade-left">
           <img src="img/portfolio/election-map-monitor.png" alt="Project Image" />
         </figure>
       </article> <!-- portfolio article ends -->
@@ -177,6 +177,8 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+
+  <script src="js/vendor/jquery.waypoints.min.js"></script>
 
   <!-- THANKS to http://www.mattboldt.com/ !! -->
   <script src="js/vendor/typed.js" content-type="text/javascript"></script>

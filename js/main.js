@@ -37,3 +37,19 @@ function terminalHeight(){
         }
     }, 10);
 }
+
+var skillsDiv = $('#tools');
+
+$(window).on('scroll', function(){
+	var winT = $(window).scrollTop(),
+  	winH = $(window).height(),
+  	skillsT = skillsDiv.offset().top;
+  if(winT + winH  > skillsT){
+  	$('.tool-border').each(function(){
+      console.log( $(this).data('associateid') );
+      $(this).find('.tool-bar').animate({
+        width:$(this).attr('data-percentage')
+      },2000);
+    });
+  }
+});

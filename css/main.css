@@ -389,42 +389,23 @@ textarea {
      flex-flow: column wrap;
    }
 
-   .about .tools-content .tool {
-     background-color: #81A3A7;
-     border-radius: 5px;
-     padding: 0 10px;
-     font-weight: normal;
-     font-size: 1.125em;
-     color: #fff;
-     letter-spacing: 1px;
+   .about .tools-content .tool-bar {
+       width:10%;
+       background: #81A3A7;
+       border-radius: 5px;
+       padding: 0 10px;
+       font-weight: normal;
+       font-size: 1.125em;
+       color: #fff;
+       letter-spacing: 1px;
    }
 
-   .about .outer-tool {
+   .about .tool-border {
      width: 100%;
      border: 1px solid #81A3A7;
      border-radius: 5px;
      margin: 8px 0;
      padding: 2px;
-   }
-
-   .about .html {
-     width: 92%;
-   }
-   .about .css {
-     width: 90%;
-   }
-   .about .javascript {
-     width: 70%;
-   }
-   .about .jquery {
-     width:40%;
-   }
-   .about .flexbox {
-     width: 60%;
-   }
-
-   .about .bootstrap {
-     width: 85%;
    }
 
    .about .about-intro {
@@ -470,7 +451,7 @@ textarea {
      justify-content: center;
      align-items: flex-start;
      flex-flow: column-reverse nowrap;
-     margin: 30px 0;
+     margin: 50px 0;
      height: 100%;
    }
 
