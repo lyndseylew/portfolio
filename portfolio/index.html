@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Fonts -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -62,7 +64,7 @@
   <section class="portfolio">
     <div class="content-wrapper">
       <article>
-        <div class="project-content">
+        <div class="project-content" data-aos="fade-right">
           <h3>Interactive US Election Map</h3>
           <h4>JavaScript</h4>
           <p>For this project, I created an interactive map of the United States which shows the results of an imitation election. Users can see the state level results as they hover over the map. This site references the HTML5 and JavaScript US map from <a href="http://dougx.net/map/usmap.html">DougX</a>.</p>
@@ -71,12 +73,25 @@
             <a href="https://github.com/lyndseylew/102-election-map" target="_blank"><img src="../img/social-icons/github.png" alt="github logo" /></a>
           </div>
         </div>
-        <figure>
+        <figure data-aos="fade-left">
           <img src="../img/portfolio/election-map-monitor.png" alt="Project Image" />
         </figure>
       </article> <!-- portfolio article ends -->
       <article class="rev">
-        <div class="project-content">
+        <div class="project-content" data-aos="fade-left">
+          <h3>Reflow Website</h3>
+          <h4>HTML | CSS | Bootstrap</h4>
+          <p>I built the Reflow website first using a template using a bootstrap model, and then from scratch based on discussions with the marketing team. It is a responsive multi-site website with video, modal pop-ups, and forms.</p>
+          <div class="project-links">
+            <a href="https://reflowfilament.com"  target="_blank" class="button">check it out</a>
+          </div>
+        </div>
+        <figure data-aos="fade-right">
+          <img src="../img/portfolio/reflow-devices.png" alt="Project Image" />
+        </figure>
+      </article> <!-- portfolio article ends -->
+      <article>
+        <div class="project-content" data-aos="fade-right">
           <h3>Interactive Magic 8 Ball</h3>
           <h4>JavaScript | jQuery</h4>
           <p>This project uses JavaScript and jQuery to emulate a Magic 8 Ball. As with a real Magic 8 Ball, when the user clicks the “Ask me Anything” button, a window appears and prompts the user to type a quiestion. The Magic 8 Ball shakes and reveals the answer.</p>
@@ -85,12 +100,12 @@
             <a href="https://github.com/lyndseylew/102-magic-8-ball" target="_blank"><img src="../img/social-icons/github.png" alt="github logo" /></a>
           </div>
         </div>
-        <figure>
+        <figure data-aos="fade-left">
           <img src="../img/portfolio/magic-8-ball-monitor.png" alt="Project Image" />
         </figure>
       </article> <!-- portfolio article ends -->
-      <article>
-        <div class="project-content">
+      <article class="rev">
+        <div class="project-content" data-aos="fade-left">
           <h3>Interactive lolcat Clock</h3>
           <h4>JavaScript</h4>
           <p>This project uses simple JavaScript to get the time. The lolcat image and greeeting change based on the current time. The user can change variables like wake up time, lunch time, nap time, and party time.</p>
@@ -99,12 +114,12 @@
             <a href="https://github.com/lyndseylew/102-lolcat-clock" target="_blank"><img src="../img/social-icons/github.png" alt="github logo" /></a>
           </div>
         </div>
-        <figure>
+        <figure data-aos="fade-right">
           <img src="../img/portfolio/lolcat-clock-monitor.png" alt="Project Image" />
         </figure>
       </article> <!-- portfolio article ends -->
-      <article class="rev">
-        <div class="project-content">
+      <article>
+        <div class="project-content" data-aos="fade-right">
           <h3>Responsive Unplugged Retreat Website</h3>
           <h4>HTML | CSS | FlexBox</h4>
           <p>This is a multi-page responsive website designed from a photoshop comp for an imagined corporate retreat company.</p>
@@ -113,26 +128,26 @@
             <a href="https://github.com/lyndseylew/unplugged-retreat" target="_blank"><img src="../img/social-icons/github.png" alt="github logo" /></a>
           </div>
         </div>
-        <figure>
+        <figure data-aos="fade-left">
           <img src="../img/portfolio/unplugged-devices.png" alt="Project Image" />
         </figure>
       </article> <!-- portfolio article ends -->
-      <article>
+      <article class="rev" data-aos="fade-left">
         <div class="project-content">
           <h3>Resonsive Rogue Pickings Website</h3>
           <h4>HTML | CSS</h4>
-          <p>This is a siingle-page responsive website designed from a photoshop comp for an imagined food truck.</p>
+          <p>This is a single-page responsive website designed from a photoshop comp for an imagined food truck.</p>
           <div class="project-links">
-            <a href="https://lyndseylew.github.io/206-rogue-pickings/" target="_blank" class="button">check it out</a>
-            <a href="https://github.com/lyndseylew/206-rogue-pickings" target="_blank"><img src="../img/social-icons/github.png" alt="github logo" /></a>
+            <a href="https://lyndseylew.github.io/rogue-pickings/" target="_blank" class="button">check it out</a>
+            <a href="https://github.com/lyndseylew/rogue-pickings" target="_blank"><img src="../img/social-icons/github.png" alt="github logo" /></a>
           </div>
         </div>
-        <figure>
+        <figure data-aos="fade-right">
           <img src="../img/portfolio/rogue-pickings-devices.png" alt="Project Image" />
         </figure>
       </article> <!-- portfolio article ends -->
-      <article class="rev">
-        <div class="project-content">
+      <article>
+        <div class="project-content" data-aos="fade-right">
           <h3>Jubilee Austen Website</h3>
           <h4>HTML | CSS</h4>
           <p>This is a single-page portfolio website designed from a photoshop comp for an imagined developer.</p>
@@ -141,7 +156,7 @@
             <a href="https://github.com/lyndseylew/portfolio-jubilee-austen" target="_blank"><img src="../img/social-icons/github.png" alt="github logo" /></a>
           </div>
         </div>
-        <figure>
+        <figure data-aos="fade-left">
           <img src="../img/portfolio/jubilee-austen-monitor.png" alt="Project Image" />
         </figure>
       </article> <!-- portfolio article ends -->
@@ -150,7 +165,7 @@
 
   <aside class="contact light">
     <div class="content-wrapper">
-      <figure>
+      <figure data-aos="zoom-out">
         <img src="../img/icons/leaves.png" alt="Logo" />
       </figure>
       <div class="contact-description">
@@ -176,12 +191,16 @@
     </div> <!-- footer content wrapper ends -->
   </footer>
 
-
   <script src="../js/vendor/modernizr-3.6.0.min.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+
   <script src="../js/plugins.js"></script>
   <script src="../js/main.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init(); </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
