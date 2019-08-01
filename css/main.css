@@ -313,7 +313,7 @@ textarea {
    }
 
    .section-heading {
-     padding: 10px 0;
+     padding: 30px 0;
    }
 
    .light {
@@ -555,6 +555,78 @@ textarea {
    .portfolio .button {
      margin-right: 10px;
    }
+
+   /* -------------------- Base Mobile Styles - Resume -------------------- */
+
+      /* PAGE TITLE STYLES */
+
+      .resume {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+      }
+
+      .resume .content-wrapper {
+        flex-flow: column nowrap;
+        height: 100%;
+      }
+
+      .resume h4, .education h4 {
+        margin: 0;
+        font-style: normal;
+      }
+
+      .experience {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+      }
+
+      .experience .content-wrapper {
+      	justify-content: space-between;
+        flex-flow: column nowrap;
+        height: 100%;
+      }
+
+      .experience .experience-content {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        height: 100%;
+      }
+
+      .experience .detail {
+      	 display: flex;
+      	 flex-basis: 45%;
+         padding: 10px;
+      }
+
+      .experience .icon {
+      	 text-align: left;
+         flex-basis: 50%;
+         padding: 0 30px;
+         color: #81A3A7;
+      }
+
+      .experience h3 {
+      	margin: 0;
+      }
+
+      .education {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+      }
+
+      .education h5 {
+        margin: 0;
+        font-size: 1em;
+        font-style: italic;
+      }
+
 
    /* -------------------- Base Mobile Styles - Contact -------------------- */
 

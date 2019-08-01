@@ -1,0 +1,322 @@
+/* colors */
+/* ---------------------------------------------------------
+ *	General
+ *  --------------------------------------------------------- */
+/* ---------------------------------------------------------
+ *	Helper classes
+ *  --------------------------------------------------------- */
+.mt20 {
+  margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.mt60 {
+  margin-top: 60px;
+}
+.mt70 {
+  margin-top: 70px;
+}
+/* ---------------------------------------------------------
+ *	Vertical timeline
+ * --------------------------------------------------------- */
+.v-timeline {
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+/* The line */
+.v-timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #bfd4db;
+  left: 20%;
+  margin-left: -6px;
+}
+/* The date/time */
+.v-timeline > li .v-time {
+  width: 15%;
+  padding-right: 100px;
+  position: absolute;
+  text-align: center;
+}
+.v-timeline > li .v-time span {
+  display: block;
+  text-align: right;
+  font-size: 1em;
+  font-weight: normal;
+  color: #595a57;
+  padding-top: 10px;
+}
+/* heading */
+.v-timeline > li > .v-heading {
+  margin-bottom: 50px;
+  position: relative;
+  margin-left: 80px;
+  background: #81A3A7;
+  padding: 11px 15px;
+  color: #fff;
+  margin: 0 0 45px 0;
+  line-height: 1.4;
+  font-size: 1.125em;
+  font-weight: normal:
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.v-timeline > li > .v-heading [class*="fa-"] {
+  margin-right: 6px;
+}
+/* Right content */
+.v-timeline > li .v-label {
+  margin: 0 0 30px 25%;
+  padding: 20px 30px;
+  font-weight: 300;
+  line-height: 1.4;
+  position: relative;
+  border: solid #bfd4db;
+  border-radius: 5px;
+  border-width: 2px;
+}
+.v-timeline > li .v-label p {
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.v-timeline > li .v-label h4 {
+  margin: 0;
+}
+/* The triangle */
+.v-timeline > li .v-label:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #bfd4db;
+  border-width: 15px;
+  top: 10px;
+}
+/* The icons */
+.v-timeline > li .v-icon {
+  width: 40px;
+  height: 26px;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  color: #fff;
+  background: #666;
+  text-align: center;
+  left: 20%;
+  margin: 7px 0 0 -24px;
+  background-color: #81A3A7;
+}
+.v-timeline > li .v-icon:before,
+.v-timeline > li .v-icon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+.v-timeline > li .v-icon:before {
+  bottom: 100%;
+  border-bottom: 10px solid #81A3A7;
+}
+.v-timeline > li .v-icon:after {
+  top: 100%;
+  width: 0;
+  border-top: 10px solid #81A3A7;
+}
+/* Example Media Queries */
+@media screen and (max-width: 65.375em) {
+  .v-timeline > li .v-time span {
+    font-size: 1.05em;
+  }
+}
+@media screen and (max-width: 47.2em) {
+  .v-timeline:before {
+    display: none;
+  }
+  .v-timeline > li .v-time {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 0;
+  }
+  .v-timeline > li .v-time span {
+    text-align: left;
+  }
+  .v-timeline > li .v-label {
+    margin: 0 0 30px 0;
+    padding: 1.3em;
+  }
+  .v-timeline > li .v-label:after {
+    right: auto;
+    left: 20px;
+    border-right-color: transparent;
+    border-bottom-color: #81A3A7;
+    top: -20px;
+  }
+  .v-timeline > li .v-icon {
+    display: none;
+  }
+}
+/* ---------------------------------------------------------
+ *	Animate
+ * --------------------------------------------------------- */
+/*
+ * FadeIn
+ * ----------------------------------------------------------------- */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+/*
+ * FadeInLeft
+ * ----------------------------------------------------------------- */
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-50px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-50px, 0, 0);
+    transform: translate3d(-50px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+/*
+ * FadeInRight
+ * ----------------------------------------------------------------- */
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(50px, 0, 0);
+    transform: translate3d(50px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(50px, 0, 0);
+    transform: translate3d(50px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+/* ---------------------------------------------------------
+ *	Backstretch
+ * --------------------------------------------------------- */
+.backstretch {
+  left: auto !important;
+}
+.backstretch:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+/* ---------------------------------------------------------
+ *	Bootstrap override
+ * --------------------------------------------------------- */
+/*
+ *	Container
+ *  --------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
