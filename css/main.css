@@ -560,21 +560,64 @@ textarea {
 
       /* PAGE TITLE STYLES */
 
-      .resume {
+      .resume, .education {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-flow: column nowrap;
       }
 
-      .resume .content-wrapper {
+      .resume .content-wrapper, .education .content-wrapper {
         flex-flow: column nowrap;
         height: 100%;
       }
 
+      .resume .section-heading, .education .section-heading {
+        text-align: center;
+      }
+
+     .resume input[type='checkbox'], .education input[type='checkbox'] {
+        display:none;
+      }
+
+      .resume .collapsible-label, .education .collapsible-label {
+        display: flex;
+        cursor: pointer;
+        flex-flow:row nowrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .resume .collapsible-label::after, .education .collapsible-label::after {
+        font-family: 'fontawesome';
+        content: "\f078";
+        font-size: .58em;
+      }
+
+      .resume .toggle:checked + label::after,
+      .education .toggle:checked + label::after {
+        content: "\f077";
+      }
+
+      .resume .collapsible-content, .education .collapsible-content {
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
+      .resume .toggle:checked + .collapsible-label + .collapsible-content,
+      .education .toggle:checked + .collapsible-label + .collapsible-content {
+        max-height: 500px;
+      }
       .resume h4, .education h4 {
         margin: 0;
         font-style: normal;
+      }
+
+      .education h5 {
+        margin: 0;
+        font-size: 1em;
+        font-style: italic;
       }
 
       .resume .about-intro {
@@ -599,7 +642,6 @@ textarea {
         font-weight: bold;
       }
 
-
       .experience {
         display: flex;
         justify-content: center;
@@ -613,6 +655,10 @@ textarea {
         height: 100%;
       }
 
+      .experience .section-heading {
+        text-align: center;
+      }
+
       .experience .experience-content {
         display: flex;
         justify-content: space-between;
@@ -624,32 +670,19 @@ textarea {
       	 display: flex;
       	 flex-basis: 45%;
          padding: 10px;
+         flex-flow: column nowrap;
+         text-align: center;
       }
 
       .experience .icon {
-      	 text-align: left;
-         flex-basis: 50%;
-         padding: 0 30px;
+      	 text-align: center;
+         padding: 30px;
          color: #81A3A7;
       }
 
       .experience h3 {
       	margin: 0;
       }
-
-      .education {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column nowrap;
-      }
-
-      .education h5 {
-        margin: 0;
-        font-size: 1em;
-        font-style: italic;
-      }
-
 
    /* -------------------- Base Mobile Styles - Contact -------------------- */
 
