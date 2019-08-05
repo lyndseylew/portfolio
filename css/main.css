@@ -622,7 +622,7 @@ textarea {
 
       .resume .about-intro {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         width: 100%;
         margin-top: 20px;
       }
@@ -662,13 +662,12 @@ textarea {
       .experience .experience-content {
         display: flex;
         justify-content: space-between;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         height: 100%;
       }
 
       .experience .detail {
       	 display: flex;
-      	 flex-basis: 45%;
          padding: 10px;
          flex-flow: column nowrap;
          text-align: center;
@@ -938,6 +937,31 @@ textarea {
          flex-flow: row-reverse nowrap;
        }
 
+       /* -------------------- Tablet Styles - resume -------------------- */
+
+       .experience .experience-content {
+         display: flex;
+         justify-content: space-between;
+         flex-flow: row wrap;
+         height: 100%;
+       }
+
+       .experience .detail {
+       	 display: flex;
+       	 flex-basis: 45%;
+          padding: 10px;
+          flex-flow: column nowrap;
+          text-align: center;
+       }
+
+       .resume .about-intro {
+         display: flex;
+         flex-flow: row nowrap;
+         width: 100%;
+         margin-top: 20px;
+       }
+
+
      }
 
      @media only screen and (min-width: 960px) {
@@ -988,6 +1012,7 @@ textarea {
        .content-wrapper {
          max-width: 960px;
        }
+
      }
 
 

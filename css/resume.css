@@ -99,7 +99,7 @@
   text-align: center;
   left: 20%;
   margin: 7px 0 0 -24px;
-  background-color: #81A3A7;
+  background-color: #bfd4db;
 }
 .v-timeline > li .v-icon:before,
 .v-timeline > li .v-icon:after {
@@ -112,12 +112,12 @@
 }
 .v-timeline > li .v-icon:before {
   bottom: 100%;
-  border-bottom: 10px solid #81A3A7;
+  border-bottom: 10px solid #bfd4db;
 }
 .v-timeline > li .v-icon:after {
   top: 100%;
   width: 0;
-  border-top: 10px solid #81A3A7;
+  border-top: 10px solid #bfd4db;
 }
 /* Example Media Queries */
 @media screen and (max-width: 65.375em) {
@@ -132,7 +132,6 @@
   .v-timeline > li .v-time {
     width: 100%;
     position: relative;
-    padding: 0 0 20px 0;
   }
   .v-timeline > li .v-time span {
     text-align: left;
@@ -145,8 +144,8 @@
     right: auto;
     left: 20px;
     border-right-color: transparent;
-    border-bottom-color: #81A3A7;
-    top: -20px;
+    border-bottom-color: #bfd4db;
+    top: -30px;
   }
   .v-timeline > li .v-icon {
     display: none;
